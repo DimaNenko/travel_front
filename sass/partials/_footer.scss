@@ -1,0 +1,134 @@
+footer {
+	@include box;
+
+	background-color: #F9F9FB;
+  display: flex;
+  justify-content: center;
+  margin-top: 270px;
+}
+
+footer {
+	background-color: #F9F9FB;
+  display: flex;
+  justify-content: center;
+  margin-top: 270px;
+
+	.footer-content {
+  	display: flex;
+  	justify-content: space-between;
+  	margin-bottom: 81px;
+
+		.footer-content-info {
+			width: 391px;
+			height: 237px;
+			display: flex;
+			flex-direction: column;
+
+			.footer-content-info-logo {
+				margin-top: 20px;
+			}
+
+			.footer-content-info-text {
+				margin-top: 26px;
+				font-family: 'Mulish';
+				font-style: normal;
+				font-weight: 300;
+				font-size: 18px;
+				line-height: 28px;
+				color: #848484;
+				mix-blend-mode: normal;
+			}
+
+			.footer-content-info-license {
+				margin-top: auto;
+				font-family: 'Mulish';
+				font-style: normal;
+				font-weight: 300;
+				font-size: 17px;
+				line-height: 28px;
+				color: #848484;
+				mix-blend-mode: normal;
+			}
+		}
+
+		.footer-content-destinations {
+			a {
+				font-family: 'Mulish';
+				font-style: normal;
+				font-weight: 300;
+				font-size: 18px;
+				line-height: 38px;
+				color: #848484;
+				mix-blend-mode: normal;
+			}
+
+			.footer-content-destinations-title span {
+				font-family: 'Mulish';
+				font-style: normal;
+				font-weight: bold;
+				font-size: 19px;
+				line-height: 60px;
+				color: #000000;
+			 	mix-blend-mode: normal;
+			}
+		}
+
+		.footer-content-shop {
+			a {
+				font-family: 'Mulish';
+				font-style: normal;
+				font-weight: 300;
+				font-size: 18px;
+				line-height: 38px;
+				color: #848484;
+				mix-blend-mode: normal;
+		 	}
+
+			.footer-content-shop-title span {
+				font-family: 'Mulish';
+				font-style: normal;
+				font-weight: bold;
+				font-size: 19px;
+				line-height: 60px;
+				color: #000000;
+				mix-blend-mode: normal;
+			}
+		}
+
+		.footer-content-interests {
+			a {
+		  	font-family: 'Mulish';
+		  	font-style: normal;
+		  	font-weight: 300;
+		  	font-size: 18px;
+		  	line-height: 38px;
+		  	color: #848484;
+		  	mix-blend-mode: normal;
+		  	-webkit-text-stroke: 2px #202336;
+		  }
+
+			.footer-content-interests-title span {
+				font-family: 'Mulish';
+				font-style: normal;
+				font-weight: bold;
+				font-size: 19px;
+				line-height: 60px;
+				color: #000000;
+				mix-blend-mode: normal;
+			}
+		}
+  }
+
+	.footer-socials {
+		display: flex;
+		justify-content: center;
+
+		.social-icon {
+			margin: 32px 17px 32px 17px;
+
+			img {
+			 cursor: pointer;
+			}
+		}
+	}
+}

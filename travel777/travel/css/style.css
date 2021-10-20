@@ -1,0 +1,611 @@
+/* SCSS Compiled */
+/***************************************************              GENERAL RESET STYLES             ***************************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+* {
+  box-sizing: border-box; }
+
+*:focus {
+  outline: none; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  border-style: none;
+  max-width: 100%; }
+
+form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+input, textarea, select {
+  vertical-align: middle;
+  color: #000;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+input::-webkit-input-placeholder {
+  color: #000; }
+
+input:focus::-webkit-input-placeholder {
+  color: #000; }
+
+/*
+@media (min-width: 1921px){}
+@media (width: 1920px){}
+@media (min-width: 1440px) and (max-width: 1919px) {}
+@media (min-width: 1360px) and (max-width: 1439px) {}
+@media (min-width: 1280px) and (max-width: 1359px) {}
+@media (min-width: 1024px) and (max-width: 1279px) {}
+@media (min-width: 768px) and (max-width: 1023px) {}
+@media (min-width: 375px) and (max-width: 767px) {}
+@media (min-width: 320px) and (max-width: 374px) {}
+*/
+/*
+@media (max-width: 1919px) {}
+@media (max-width: 1439px) {}
+@media (max-width: 1279px) {}
+@media (max-width: 767px) {}
+*/
+/*usage  @include font-size(13);*/
+/* Brand Colors ------------------------------------------------*/
+#wrapper,
+main,
+#content,
+#sidebar,
+aside,
+section {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto; }
+
+.layout {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  width: 1170px;
+  margin: 0 auto; }
+
+header {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto; }
+
+.logo-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px; }
+  .logo-menu .layout-1220 {
+    display: flex;
+    justify-content: space-between; }
+  .logo-menu .menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px; }
+  .logo-menu .login-button {
+    border: 1px solid #FB8F1D;
+    width: 132px;
+    height: 44px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FB8F1D; }
+  .logo-menu .register-button {
+    margin-left: 20px;
+    width: 132px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FB8F1D;
+    border-radius: 8px;
+    color: #fff; }
+  .logo-menu .menu-item {
+    font-size: 16px;
+    color: #B8BECD;
+    margin-right: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .logo-menu .active-menu-item {
+    color: #202336; }
+  .logo-menu .menu a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #B8BECD; }
+  .logo-menu .active-menu-item a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #202336; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px; }
+
+.travel-block {
+  display: flex; }
+
+.logo-menu .layout-1220 {
+  display: flex;
+  justify-content: space-between; }
+
+.layout-1220 {
+  width: 1220px; }
+
+.layout-1120 {
+  width: 1120px; }
+
+.first-block {
+  width: 50%; }
+
+.first-block-title {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+  color: #202336;
+  margin-top: 40px; }
+
+.first-block-text {
+  margin-top: 60px; }
+
+.first-block-text-hr {
+  width: 32px;
+  float: left; }
+
+.selectors-block {
+  margin-top: 40px; }
+
+.selectors-block-row {
+  display: flex;
+  margin-bottom: 35px; }
+
+.selector-block {
+  margin-right: 30px;
+  position: relative; }
+
+.selectors-block select {
+  width: 220px;
+  height: 52px;
+  border: 1px solid #AFB0B9;
+  background: inherit;
+  border-radius: 6px;
+  padding: 0 30px;
+  appearance: none;
+  cursor: pointer; }
+
+.select-marker {
+  height: 7px;
+  width: 7px;
+  position: absolute;
+  top: 23px;
+  right: 29px;
+  transform: rotate(45deg);
+  border-bottom: 1px solid #4A4C53;
+  border-right: 1px solid #4A4C53; }
+
+.button {
+  width: 180px;
+  height: 52px;
+  background: #FB8F1D;
+  border-radius: 8px;
+  margin-top: 16px;
+  border: none;
+  color: white;
+  font-size: 17px;
+  cursor: pointer; }
+
+.learn-block {
+  margin-top: 266px;
+  flex-direction: row;
+  display: flex; }
+  .learn-block .learn-block-img {
+    width: 100%;
+    height: 100%; }
+  .learn-block .learn-block-info {
+    margin-left: 102px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .learn-block .learn-block-info .learn-block-info-title {
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      color: #000000; }
+    .learn-block .learn-block-info .learn-block-info-text {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 17px;
+      color: #7D7987;
+      margin-top: 20px; }
+    .learn-block .learn-block-info .learn-block-info-button {
+      cursor: pointer;
+      margin-top: 33px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      color: #FFFFFF;
+      background: #FB8F1D;
+      border-radius: 8px;
+      height: 48px;
+      border: none;
+      width: 164px; }
+
+.destinations-block {
+  margin-top: 262px; }
+  .destinations-block .destinations-block-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .destinations-block .destinations-block-title-row .destinations-block-title {
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px; }
+    .destinations-block .destinations-block-title-row .destinations-block-view-button {
+      color: #FB8F1D; }
+  .destinations-block .destinations-block-gallery {
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between; }
+    .destinations-block .destinations-block-gallery .destinations-block-gallery-item {
+      height: 100%;
+      position: relative; }
+      .destinations-block .destinations-block-gallery .destinations-block-gallery-item .destinations-block-gallery-item-info {
+        position: absolute;
+        bottom: 0;
+        width: 120px;
+        border-radius: 0px 6px 0px 0px;
+        background-color: #fff;
+        height: 56px;
+        padding-top: 11px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        font-family: 'Inter'; }
+        .destinations-block .destinations-block-gallery .destinations-block-gallery-item .destinations-block-gallery-item-info .place {
+          font-weight: 600;
+          font-size: 17px;
+          color: #042521; }
+        .destinations-block .destinations-block-gallery .destinations-block-gallery-item .destinations-block-gallery-item-info .country {
+          font-weight: 500;
+          font-size: 15px;
+          color: #80918E; }
+
+.guides-block {
+  margin-top: 173px;
+  display: flex; }
+  .guides-block .guides-block-info {
+    margin-right: 102px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .guides-block .guides-block-info .guides-block-info-title {
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      color: #000000; }
+    .guides-block .guides-block-info .guides-block-info-text {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 17px;
+      color: #7D7987;
+      margin-top: 20px; }
+    .guides-block .guides-block-info .guides-block-info-button {
+      margin-top: 33px;
+      font-family: 'Inter';
+      cursor: pointer;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      color: #FFFFFF;
+      background: #FB8F1D;
+      border-radius: 8px;
+      height: 48px;
+      border: none;
+      width: 164px; }
+  .guides-block .guides-block-img {
+    width: 100%;
+    height: 100%; }
+
+.testimonials-block .slick-prev::before {
+  color: #000;
+  top: 150px;
+  position: absolute;
+  right: 60px; }
+.testimonials-block .slick-next::before {
+  color: #000;
+  top: 150px;
+  position: absolute;
+  left: 60px; }
+.testimonials-block .slick-dots {
+  bottom: -70px; }
+
+.testimonials-block .testimonials-block-item {
+  margin-top: 248px;
+  display: flex !important; }
+  .testimonials-block .testimonials-block-item .testimonials-block-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-right: 169px; }
+    .testimonials-block .testimonials-block-item .testimonials-block-info .testimonials-block-info-title {
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 50px;
+      position: absolute;
+      top: -93px; }
+    .testimonials-block .testimonials-block-item .testimonials-block-info .testimonials-block-info-stars {
+      display: flex; }
+      .testimonials-block .testimonials-block-item .testimonials-block-info .testimonials-block-info-stars .star {
+        margin-right: 16px; }
+    .testimonials-block .testimonials-block-item .testimonials-block-info .testimonials-block-info-text {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 36px;
+      width: 450px;
+      margin-top: 30px; }
+    .testimonials-block .testimonials-block-item .testimonials-block-info .testimonials-block-info-author {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column; }
+      .testimonials-block .testimonials-block-item .testimonials-block-info .testimonials-block-info-author .name {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 48px; }
+
+.stories-block .stories-block-title-row {
+  display: flex; }
+  .stories-block .stories-block-title-row .stories-block-title {
+    margin-top: 270px;
+    margin-bottom: 56px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    color: #000000;
+    mix-blend-mode: normal; }
+  .stories-block .stories-block-title-row .stories-block-button {
+    margin-top: 270px;
+    margin-bottom: 56px;
+    margin-left: auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 60px;
+    color: #FB8F1D;
+    mix-blend-mode: normal; }
+.stories-block .stories-block-gallery {
+  display: flex; }
+  .stories-block .stories-block-gallery .stories-block-gallery-item {
+    width: 266px;
+    height: 466px;
+    margin: 0 10px;
+    position: relative; }
+    .stories-block .stories-block-gallery .stories-block-gallery-item .stories-block-gallery-item-img img {
+      border-radius: 8px; }
+    .stories-block .stories-block-gallery .stories-block-gallery-item .stories-block-gallery-item-title {
+      position: absolute;
+      top: 230px;
+      background-color: #fff;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 30px;
+      height: 80px; }
+    .stories-block .stories-block-gallery .stories-block-gallery-item .stories-block-gallery-item-text {
+      position: absolute;
+      background-color: #fff;
+      top: 310px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 26px;
+      color: #7D7987;
+      mix-blend-mode: normal; }
+    .stories-block .stories-block-gallery .stories-block-gallery-item .stories-block-gallery-item-button {
+      position: absolute;
+      top: 400px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 28px;
+      color: #FB8F1D;
+      mix-blend-mode: normal; }
+
+footer {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  background-color: #F9F9FB;
+  display: flex;
+  justify-content: center;
+  margin-top: 270px; }
+
+footer {
+  background-color: #F9F9FB;
+  display: flex;
+  justify-content: center;
+  margin-top: 270px; }
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 81px; }
+    footer .footer-content .footer-content-info {
+      width: 391px;
+      height: 237px;
+      display: flex;
+      flex-direction: column; }
+      footer .footer-content .footer-content-info .footer-content-info-logo {
+        margin-top: 20px; }
+      footer .footer-content .footer-content-info .footer-content-info-text {
+        margin-top: 26px;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        color: #848484;
+        mix-blend-mode: normal; }
+      footer .footer-content .footer-content-info .footer-content-info-license {
+        margin-top: auto;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 28px;
+        color: #848484;
+        mix-blend-mode: normal; }
+    footer .footer-content .footer-content-destinations a {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 38px;
+      color: #848484;
+      mix-blend-mode: normal; }
+    footer .footer-content .footer-content-destinations .footer-content-destinations-title span {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 60px;
+      color: #000000;
+      mix-blend-mode: normal; }
+    footer .footer-content .footer-content-shop a {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 38px;
+      color: #848484;
+      mix-blend-mode: normal; }
+    footer .footer-content .footer-content-shop .footer-content-shop-title span {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 60px;
+      color: #000000;
+      mix-blend-mode: normal; }
+    footer .footer-content .footer-content-interests a {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 38px;
+      color: #848484;
+      mix-blend-mode: normal;
+      -webkit-text-stroke: 2px #202336; }
+    footer .footer-content .footer-content-interests .footer-content-interests-title span {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 60px;
+      color: #000000;
+      mix-blend-mode: normal; }
+  footer .footer-socials {
+    display: flex;
+    justify-content: center; }
+    footer .footer-socials .social-icon {
+      margin: 32px 17px 32px 17px; }
+      footer .footer-socials .social-icon img {
+        cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
